@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #544e4e no-repeat fixed 0% 0%;
+  width: auto;
+  height: auto;
+  border-top: 4px solid #6600cc;
+  border-bottom: 4px solid #6600cc;
+}
+
+.fab {
+  font-size: 21pt;
+  float: left;
+  padding: 17px;
+  color: white;
+}
+
+.fab:hover {
+  background-color: #6600cc;
+  border-radius: 40%;
+  transition: 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+}
+
+.icons {
+  background-color: #312d2d;
+  font-size: 30px;
+  padding: 10px;
+  height: 59px;
+  display: block;
+}
+
+.wordqk {
+  opacity: 0.7;
+  margin-right: 2%;
+  float: right;
+  display: block;
+  font: bold 24pt cairo;
+}
+
+.wordqk:hover {
+  opacity: 1;
+}
+
+.wordqk0 {
+  text-align: center;
+  color: #f9cc49;
+  margin-left: 20%;
+  font: bold 23pt cairo;
+}
+
+.sura {
+  display: block;
+  display: flex;
+  flex-wrap: nowrap;
+  font: bold 13pt cairo;
+}
+
+.s000 {
+  opacity: 0.75;
+  text-align: center;
+  border-right: 4px solid lightgreen;
+
+  width: 33.3%;
+  line-height: 80px;
+  background-color: #c8b88e;
+  color: #005502;
+}
+
+.s000:hover {
+  opacity: 1;
+  background-color: #3e8e41;
+  color: white;
+  transition: 0.4s linear;
+}
+
+.sura2 {
+  display: block;
+  display: flex;
+  flex-wrap: nowrap;
+  font: bold 13pt cairo;
+}
+
+@media screen and (max-width:300px) {
+  
+}
+
+@media screen and (min-width:301px) and (max-width:440px) {
+  
+}
+
+@media screen and (min-width:441px) and (max-width:600px) {
+
+}
+
+@media screen and (min-width:601px) and (max-width:920px) {
+  
+}
+
+@media screen and (min-width:921px) and (max-width:1030px) {
+
+}
+
+@media screen and (min-width:1031px) and (max-width:1300px) {
+
+}
