@@ -1,0 +1,189 @@
+html,body {
+    height: 100%;
+    background-color: #181D25;
+}
+
+.progress1 {
+    position: fixed;
+    width: 0;
+    height: 4px;
+    background-color: grey;
+    z-index: 1;
+    animation: progress 1.5s infinite;
+}
+
+@keyframes progress {
+    from {
+        width: 0% ;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.spinner {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    border: 0px solid grey;
+    top: 50% ;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: spinner 1s infinite;
+    border-radius: 0%;
+}
+
+@keyframes spinner {
+    0% {
+        border-bottom: 10px solid grey;
+        rotate: 0deg;
+    }
+    25% {
+        border-bottom: 30px solid grey;
+        rotate: 0deg;
+    }
+    50% {
+        border-bottom: 20px solid grey;
+        rotate: 0deg;
+    }
+    75% {
+        border-bottom: 70px solid grey;
+        rotate: 0deg;
+    }
+    100% {
+        border-bottom: 10px solid grey;
+        rotate: 0deg;
+    }
+}
+
+.nav-hover {
+    font-size: 10pt;
+    color: white;
+}
+
+.nav-hover:hover {
+    color: #06CC99;
+    transform: scale(1.05) ;
+    z-index: 1;
+}
+
+.shahid-img {
+    margin-bottom: 10%;
+    transition: transform 0.2s;
+}
+
+.shahid-img:hover {
+    transform: scale(1.5) rotate(-10deg);
+}
+
+.logo {
+    height: 50px;
+    width: 60px;
+    background-color: #06CC99;
+    background: url("/PICS/bootstrap-logo-shadow.png");
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.2) rotate(-10deg);
+    animation: move 0.2s;
+}
+
+@keyframes move {
+    0% {
+        rotate: 0deg;
+    } 50% {
+        rotate: -180deg;
+    } 100% {
+        rotate: -360deg;
+    }
+}
+
+.img-p {
+    padding: 0;
+    margin-top: 10px ;
+    transition: transform 0.3s , border 0.3s;
+    border: solid #181D25;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.img-p:hover {
+    transform: scale(1.3);
+    border: 1px solid #06CC99;
+}
+
+.img-one:hover {
+    transform: scale(1.3) translate(15px) ;
+    border: 1px solid #06CC99;
+}
+
+.img-last:hover {
+    transform: scale(1.3) translate(-15px);
+    border: 1px solid #06CC99;
+}
+
+.line {
+    height: 15px;
+    width: 1px;
+    background-color: #06CC99;
+}
+
+.aaa {
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.aaa:hover {
+    color: #06CC99;
+}
+
+.img-social {
+    border: 1px solid white ;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.3s , border 0.3s;
+}
+
+.img-social:hover {
+    transform: scale(1.4);
+    border-color: #06CC99;
+}
+
+.last {
+    color: #8595AD ;
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px){
+    .img-egypt:hover {
+        transform: scale(1.3) translate(-15px);
+        border: 1px solid #06CC99;
+    }
+    .img-free:hover {
+        transform: scale(1.3) translate(15px) ;
+        border: 1px solid #06CC99;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 575px){
+    .img-arabic:hover,.img-turk:hover,.img-egypt:hover {
+        transform: scale(1.3) translate(-15px);
+        border: 1px solid #06CC99;
+    }
+    .img-west:hover,.img-bollwood:hover,.img-free:hover {
+        transform: scale(1.3) translate(15px) ;
+        border: 1px solid #06CC99;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .img-p:hover {
+        transform: scale(1.1);
+        border: 1px solid #06CC99;
+    }
+}
