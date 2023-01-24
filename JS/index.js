@@ -1,5 +1,5 @@
 document.onreadystatechange = function() {
-    if (document.readyState !== "complete") {
+    if (document.readyState === "complete") {
         document.querySelector("body").style.visibility = "hidden";
         document.querySelector(".progress1").style.visibility = "visible";
         document.querySelector(".spinner").style.visibility = "visible";
@@ -10,7 +10,8 @@ document.onreadystatechange = function() {
             document.querySelector("body").style.visibility = "visible";
         }, 900);
     }
-}
+} 
+
 
 const bun = document.getElementsByClassName('nav-hover')
 
@@ -33,16 +34,3 @@ for(let y = 0 ; y < bun1.length ; y++){
         this.className += " cliks";
     })
 }
-
-var spinner = document.querySelector('.spinner')
-
-function work() { $(spinner).fadeIn(0) }
-
-if (document.readyState == 'complete') {
-  // still loading, wait for the event
-  document.addEventListener('DOMContentLoaded', work);
-} else {
-  // DOM is ready!
-  work();
-}
-  

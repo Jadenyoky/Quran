@@ -8,8 +8,8 @@ html,body {
     width: 0;
     height: 4px;
     background-color: grey;
-    z-index: 1;
     animation: progress 1.5s infinite;
+    margin-bottom: 100px;
 }
 
 @keyframes progress {
@@ -34,6 +34,7 @@ html,body {
     transform: translate(-50%, -50%);
     animation: spinner 1s infinite;
     border-radius: 0%;
+    visibility: hidden;
 }
 
 @keyframes spinner {
@@ -211,12 +212,4 @@ html,body {
 } .cliks, .bun:hover {
     background-color: white;
     color: coral ;
-}
-
-.ggg {
-    display: none;
-    position: fixed;
-    background-color: #8595AD;
-    bottom: 70px;
-    transform: translate(100px, 0px);
 }

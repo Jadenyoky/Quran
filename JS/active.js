@@ -1,4 +1,3 @@
-const bu = document.querySelector('bu')
 const bun = document.getElementsByClassName('bun')
 
 for(let y = 0 ; y < bun.length ; y++){
@@ -8,33 +7,3 @@ for(let y = 0 ; y < bun.length ; y++){
         this.className += " clickings";
     })
 }
-
-var spinner = document.querySelectorAll('.gif') ;
-
-var url = "https://fonts.google.com/" ;
-
-document.addEventListener("DOMContentLoaded", () => {
-    $("body").html(spinner).load(url)
-});
-
-/* $(function() {
-
-    // optional: don't cache ajax to force the content to be fresh
-    $.ajaxSetup({
-      cache: false
-    });
-  
-    // specify loading spinner
-    //var spinner = "<img src='http://i.imgur.com/pKopwXp.gif' alt='loading...' />";
-
-    var spinner = "<img src='../Beat.gif' alt='loading' />"
-  
-    // specify the server/url you want to load data from
-    var url = "hello.html";
-  
-    // on click, load the data dynamically into the #result div
-    addEventListener('load',function() {
-      $("#result").html(spinner).load(url);
-    });
-  
-  }); */

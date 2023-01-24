@@ -1,0 +1,109 @@
+body {
+    overflow: overlay;
+    height: 2000px;
+} ::-webkit-scrollbar {
+    width: 10px;
+} ::-webkit-scrollbar-thumb {
+    background-color: gray;
+} .all {
+    position: relative;
+    background-color: transparent;
+    height: 100vh;
+} .iall {
+    position: absolute;
+    background-color: white;
+    right: 10px;
+    height: 7vh;
+    width: 50px;
+    background-color: transparent;
+    border: 2px solid transparent ;
+    cursor: pointer;
+    transition: 0.2s;
+} .iall:hover {
+    background-color: black;
+    color: white ;
+    border-left: 2px solid white ;
+    border-bottom: 2px solid white;
+} .iall-plus {
+    position: absolute;
+    left: 50% ;
+    transform: translate(-50%, -50%) rotate(0deg);
+    font-size: 30px;
+} .ione {
+    top: 30% ;
+    transform: translate(-50%, -50%) rotate(0deg);
+    transition: 0.2s;
+} .itwo {
+    top: 50% ;
+    transform: translate(-50%, -50%) rotate(0deg) scale(1);
+    transition: 0.2s;
+} .ithree {
+    top: 70% ;
+    transform: translate(-50%, -50%) rotate(0deg);
+    transition: 0.2s;
+} .ione-t {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+} .itwo-t {
+    transform: translate(-50%, -50%) rotate(0deg) scale(0);
+} .ithree-t {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+} .ione-x {
+    transform: translate(-50%, -50%) rotate(150deg);
+} .ithree-x {
+    transform: translate(-50%, -50%) rotate(-150deg);
+} .nall {
+    position: relative;
+    right: 0;
+    width: 0;
+    height: 7vh;
+    background-color: transparent;
+    transition: 0.3s;
+    color: transparent;
+    border-bottom: 2px solid white ;
+    visibility: hidden;
+} .nall-t {
+    width: calc(100% - 60px);
+    color: white;
+    background-color: black;
+    visibility: visible;
+} .ihead {
+    position: absolute;
+    top: 50% ;
+    transform: translate(-100%, -50%);
+    border-right: 2px solid white;
+    padding: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+    visibility: hidden;
+} .ihead-t {
+    background-color: white;
+    color: black;
+    visibility: visible;
+    transform: translate(0, -50%);
+} .nall-menu {
+    display: flex;
+    position: absolute;
+    top: 50% ;
+    left: 200px;
+    transform: translate(0, -50%);
+    gap: 20px;
+    list-style-type: none;
+} .nall-menu > li {
+    font-size: 20px;
+    padding: 4px;
+    cursor: pointer;
+} .nall-ll.hvr-underline-from-center::before {
+    background-color: white;
+} .call {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    height: 93vh;
+    width: 0;
+    background-color: aqua;
+    transition: 0.3s;
+} .call-t {
+    width: 100%;
+}

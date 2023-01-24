@@ -1,0 +1,222 @@
+body {
+    background-color: black;
+    overflow: overlay;
+} .all {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+} .nav0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: teal;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    height: 90px;
+    width: 100%;
+    transition: 0.3s;
+} .div1 {
+    padding: 20px;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.3s , border 0s;
+    cursor: pointer;
+} .div1:hover {
+    background-color: white;
+    color: teal ;
+} @keyframes act {
+    50% {
+        transform: scale(1.2);
+    } 
+} .activitor {
+    border-bottom: 4px solid teal;
+    background-color: white;
+    color: teal ;
+    animation: act 0.3s;
+} .nav00 {
+    display: flex;
+    justify-content: center;
+    gap: 70px ;
+    background-color: darkslategrey;
+    color: teal; 
+} .nav2 {
+    padding: 20px;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.3s , border 0s , visibility 0s;
+    opacity: 0.1;
+} .moving1 {
+    opacity: 1;
+    animation: move 1s;
+    transition: 0.3s;
+}  .moving2 {
+    opacity: 1;
+    animation: move 1s;
+    transition: 0.3s;
+} .moving3 {
+    opacity: 1;
+    animation: move 1s;
+    transition: 0.3s;
+} .moving4 {
+    opacity: 1;
+    animation: move 1s;
+    transition: 0.3s;
+} .moving5 {
+    opacity: 1;
+    animation: move 1s;
+    transition: 0.3s;
+} @keyframes move {
+    0% {
+        opacity: 0;
+        color: white ;
+        transform: translate(0px, -100px);
+    } 50% {
+        transform: translate(0px, 0px);
+    } 100% {
+        transform: translate(0);
+    }
+} .hello {
+    background-color: blue;
+    height: 0;
+    width: 100%;
+    transition: 1s;
+    color: transparent;
+} .hii {
+    height: 0;
+    background-color: black;
+    width: 100%;
+    transition: 1s;
+} .tran {
+    color: yellow;
+    height: 100vh;
+} ::-webkit-scrollbar {
+    width: 10px ;
+} ::-webkit-scrollbar-thumb {
+    background-color: teal;
+    width: 10px ;
+    border-radius: 1px;
+} ::-webkit-scrollbar-track {
+    background-color: transparent;
+} .kkk {
+    position: sticky;
+    top: 100px ;
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    transition: 1s;
+} .over {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 250px;
+    width: 100%;
+    background-color: coral;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+} .onee , .twoo , .threee , .fourr {
+    display: flex;
+    width: 100% ;
+    gap: 1px;
+    scroll-snap-align: start;
+} .over::-webkit-scrollbar-thumb {
+    background-color: teal;
+} .over::-webkit-scrollbar-track {
+    background-color: aqua;
+} .over1 {
+    background-color: coral;
+    height: 70vh;
+    width: 50% ;
+    padding: 10px ;
+    gap: 10px ;
+    overflow-y: auto ;
+    scroll-snap-type: y mandatory;
+    scroll-padding: 24px;
+} .over1 > img {
+    scroll-snap-align: start;
+} .vid {
+    display: flex;
+    justify-content: start;
+    gap: 40px ;
+} #my-video1 {
+    width: 100% ;
+    height: 75vh;
+} .changer{
+    position: absolute;
+    padding: 20px;
+    font-size: 0px;
+    color: white;
+} .top , .top0 {
+    position: fixed;
+    bottom: 0 ;
+    right: 0;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px ;
+    font-size: 20px;
+    color: transparent;
+    background-color: transparent;
+    border-radius: 100px;
+    transition: 0.3s;
+    transform: scale(0);
+    cursor: pointer;
+} .top1 {
+    transform: scale(1.2);
+    color: white ;
+    background-color: teal;
+} .top01 {
+    transform: scale(1.2);
+    color: white ;
+    background-color: teal;
+} .bo {
+    position: relative;
+    right: 0;
+    bottom: 0;
+} .top:hover , .top0:hover {
+    background-color: darkslategray;
+} .add {
+    box-shadow: 0px 8px 7px 0px darkslategray ;
+} .prog0 {
+    display: flex;
+    position: sticky;
+    top: 90px;
+    height: 0;
+    z-index: 1;
+    background-color: white;
+    transition: 0.3s;
+    transform: scale(0);
+} .prog00 {
+    transform: scale(0);
+    height: 0;
+    background-color: teal;
+    width: 0;
+    transition: 0.3s;
+} .prog01 {
+    transform: scale(1);
+    height: 7px;
+} .prog02 {
+    transform: scale(1);
+    height: 7px;
+} .percent {
+    position: sticky;
+    top: 97px ;
+    width: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: teal;
+    transform: scale(0);
+    color: yellow;
+    height: 0px;
+    transition: 0.3s;
+} .percent0 {
+    transform: scale(1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    font-size: 20px;
+    padding: 20px;
+    width: 70px;
+}

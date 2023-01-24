@@ -1,0 +1,139 @@
+body {
+    height: 10000px;
+}
+.h01 {
+    padding: 20px ;
+    text-align: center;
+} .header {
+    display: flex;
+    color: white;
+    padding: 20px ;
+    gap: 100px ;
+    align-items: center ;
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    position: sticky;
+    top: 0 ;
+    z-index: 1;
+} .header2 {
+    visibility: hidden;
+    transition: 0.3s;
+} .kkkk {
+    background-color: black;
+    position: fixed;
+    animation: hhu 0.3s ;
+    transform: translate(0px, 100px);
+    visibility: visible;
+} @keyframes hhu {
+    from {
+        transform: translate(0px, -500px);
+    } to {
+        transform: translate(0px, -100px);
+    }
+} .hh6 {
+    cursor: pointer;
+} .hh1 {
+    position: absolute;
+    right: 20px;
+} .hh2 {
+    visibility: hidden;
+    content-visibility: hidden;
+    position: absolute;
+    top: 50px ;
+    left: 0;
+    background-color: blue;
+    color: blue ;
+    width: 500px;
+    text-align: center;
+    animation: mss 0.3s;
+    transition: 0.2s;
+} @keyframes mss {
+    from{
+        height: 500px;
+    } to {
+        height: 0;
+    }
+} 
+.hh10 {
+    position: absolute;
+    top: 50px ;
+    left: 0;
+    background-color: blue;
+    color: white ;
+    height: 500px;
+    width: 500px;
+    text-align: center;
+    transition: 0.3s;
+    visibility: visible;
+    content-visibility: visible;
+    animation: mmm 0.3s ;
+} @keyframes mmm {
+    from {
+        height: 0;
+    } to {
+        height: 500px;
+    }
+}
+
+.hh4 {
+    transform: rotate(180deg)
+} .hh3 {
+    transition:all 0.5s;
+    cursor: pointer;
+} .hhh {
+    transition: 0.3s;
+}
+
+.hhhh1 {
+    position: absolute;
+    top: 50px ;
+    left: 0;
+    background-color: cadetblue;
+    color: white ;
+    height: 200px;
+    width: 150px;
+    transition: 0.3s;
+    animation: hhhh1 0.3s;
+    content-visibility: hidden;
+    visibility: hidden;
+} @keyframes hhhh1 {
+    from {
+        height: 200px ;
+    } to {
+        height: 0;
+    }
+} .hhhh2 {
+    content-visibility: visible;
+    height: 200px;
+    animation: hhhh2 0.3s;
+    visibility: visible;
+    transition: 0.3s;
+} @keyframes hhhh2 {
+    from {
+        height: 0;
+    } to {
+        height: 200px;
+    }
+} .test {
+    position: sticky;
+    top: 150px;
+    left: 500px;
+    height: 0;
+    width: 300px;
+    background-color: coral;
+    color: transparent;
+    text-align: center;
+    transform: translate(0 , -100px);
+    transition: 0.3s;
+} .test > div {
+    padding-top: 40px;
+} .test1 {
+    position: sticky;
+    top: 150px;
+    height: 300px;
+    width: 300px;
+    color: azure;
+    transition: 0.6s;
+    transform: translate(0 , -100px);
+}

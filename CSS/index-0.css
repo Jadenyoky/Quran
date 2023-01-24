@@ -1,0 +1,119 @@
+body {
+    height: 10000px;
+}
+.nall {
+    position: sticky;
+    top: 0 ;
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 100%);
+    color: white;
+    height: 100px;
+    gap: 10px;
+    z-index: 2;
+} .iall {
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+} .iall:hover , .eall-one:hover , .eall-two:hover , .call-no:hover {
+    background-color: rgb(255, 255, 255, 50%);
+} .call {
+    cursor: pointer;
+    transition: 0.3s;
+} .call:hover {
+    background-color: rgb(255, 255, 255, 50%);
+} .eall-one , .eall-two {
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+} .eall-two {
+    display: none;
+} .call.hvr-underline-from-left::before {
+    background-color: rgb(255, 255, 255, 50%)
+}
+
+.menu-o {
+    position: fixed;
+    top: 100px;
+    height: 0;
+    width: 100% ;
+    transform: translate(0, -250px);
+    background-color: rgb(0, 0, 0, 100%);
+    color: white ;
+    transition: 1s;
+    animation: allll 1s;
+} @keyframes allll {
+    0% {
+        color: transparent
+    } 50% {
+        color: transparent
+    } 100% {
+        color: white
+    }
+} .menu-oo > li {
+    display: table;
+    cursor: pointer;
+}
+
+
+.menu-t {
+    position: fixed;
+    top: 100px ;
+    width: 100%;
+    height: calc(100vh - 200px);
+    background-color: blueviolet;
+    color: yellow;
+    transform: translate(0, -100%);
+    transition: 1s , trasform 0s;
+} .menu-tt > li {
+    display: table;
+    cursor: pointer;
+}
+.tww2 {
+    transform: translate(0);
+}
+
+@media only screen and (max-width: 800px)  {
+    .one {
+      display: none;
+    }
+} @media only screen and (max-width: 650px) {
+    .two {
+        display: none;
+    }
+} @media only screen and (max-width: 500px) {
+    .three {
+        display: none;
+    } 
+} @media only screen and (max-width: 400px) {
+    .four {
+        display: none;
+    } .eall-one {
+        display: none;
+    } .eall-two {
+        display: block;
+    } .tww {
+        animation: aaaa 1s;
+        transform: translate(0);
+        height: 250px;
+        background-color: rgb(0, 0, 0, 100%);
+        color: white; 
+    } @keyframes aaaa {
+        0% {
+            color: transparent
+        } 50% {
+            color: transparent
+        } 100% {
+            color: white ;
+        }
+    } .tww2 {
+        transform: translate(0, -100%);
+    }
+}
+
+a {
+    text-decoration: none;
+    color: white
+}

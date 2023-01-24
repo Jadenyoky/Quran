@@ -1,0 +1,66 @@
+section {
+    height: 20vh;
+    color: white;
+} #one1 {
+    background-color: #577399;
+} #two2 {
+    background-color: #495867;
+} #three3 {
+    background-color: #FFAD05;
+} #four4 {
+    background-color: #987284;
+} #five5 {
+    background-color: black;
+} .splide__slide {
+    text-align: center;
+}
+
+.changer {
+    position: relative;
+    height: 50vh;
+    width: 100%;
+} .ione {
+    top: 47%;
+    left: 50%;
+    font-size: 50px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: 0.3s;
+} .itwo {
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    position: absolute;
+    transform: translate(-50%, -50%) scale(1);
+    cursor: pointer;
+    transition: 0.1s;
+} .ithree {
+    top: 53%;
+    left: 50%;
+    font-size: 50px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: 0.3s;
+} .ione-plus {
+    top: 50% ;
+} .itwo-plus {
+    top: 50% ;
+} .ithree-plus {
+    top: 50% ;
+} .ione-x {
+    transform: translate(-50%, -50%) rotate(135deg);
+} .itwo-x {
+    font-size: 0;
+} .ithree-x {
+    transform: translate(-50%, -50%) rotate(-135deg);
+} 
+
+
+.eee {
+    transform: translate(-100%);
+    transition: 1s;
+} .eee1 {
+    transform: translate(0);
+}
