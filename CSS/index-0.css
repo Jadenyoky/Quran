@@ -1,5 +1,14 @@
 body {
     height: 10000px;
+    overflow: overlay;
+} .body-plus {
+    overflow: hidden;
+} ::-webkit-scrollbar {
+    width: 10px;
+} ::-webkit-scrollbar-thumb {
+    background-color: white;
+    mix-blend-mode: difference;
+    border-radius: 25px;
 }
 .nall {
     position: sticky;
@@ -62,7 +71,7 @@ body {
     position: fixed;
     top: 100px ;
     width: 100%;
-    height: calc(100vh - 200px);
+    height: 100vh;
     background-color: blueviolet;
     color: yellow;
     transform: translate(0, -100%);
@@ -109,11 +118,13 @@ body {
             color: white ;
         }
     } .tww2 {
-        transform: translate(0, -100%);
+        transform: translate(0);
     }
 }
 
 a {
     text-decoration: none;
     color: white
+} a:hover {
+    color: white;
 }
