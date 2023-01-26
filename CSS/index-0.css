@@ -1,13 +1,13 @@
 body {
     height: 10000px;
     overflow: overlay;
-} .body-plus {
-    overflow: hidden;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 } ::-webkit-scrollbar {
     width: 10px;
 } ::-webkit-scrollbar-thumb {
     background-color: white;
-    mix-blend-mode: difference;
     border-radius: 25px;
 }
 .nall {
@@ -24,7 +24,7 @@ body {
     padding: 20px;
     cursor: pointer;
     transition: 0.3s;
-} .iall:hover , .eall-one:hover , .eall-two:hover , .call-no:hover {
+} .iall:hover , .call-no:hover {
     background-color: rgb(255, 255, 255, 50%);
 } .call {
     cursor: pointer;
@@ -36,6 +36,8 @@ body {
     right: 0;
     padding: 20px;
     cursor: pointer;
+    height: 70px;
+    width: 60px;
     transition: 0.3s;
 } .eall-two {
     display: none;
@@ -70,32 +72,42 @@ body {
 .menu-t {
     position: fixed;
     top: 100px ;
-    width: 100%;
+    right: 0;
+    width: 0;
     height: 100vh;
     background-color: blueviolet;
     color: yellow;
-    transform: translate(0, -100%);
-    transition: 1s , trasform 0s;
+    transition: 1s ;
 } .menu-tt > li {
     display: table;
     cursor: pointer;
 }
 .tww2 {
-    transform: translate(0);
+    width: 30%;
+}
+
+.tww3 {
+    transition: 1s;
 }
 
 @media only screen and (max-width: 800px)  {
     .one {
-      display: none;
+        display: none;
+    } .tww2 {
+        width: 40%;
     }
 } @media only screen and (max-width: 650px) {
     .two {
         display: none;
+    } .tww2 {
+        width: 50%;
     }
 } @media only screen and (max-width: 500px) {
     .three {
         display: none;
-    } 
+    } .tww2 {
+        width: 60%;
+    }
 } @media only screen and (max-width: 400px) {
     .four {
         display: none;
@@ -118,7 +130,7 @@ body {
             color: white ;
         }
     } .tww2 {
-        transform: translate(0);
+        width: 0;
     }
 }
 
@@ -127,4 +139,69 @@ a {
     color: white
 } a:hover {
     color: white;
+}
+
+
+.menu-x {
+    position: absolute;
+    font-size: 35px;
+} .one1 {
+    top: 10px ;
+    right: 7px;
+    transform: translate(0) rotate(90deg);
+} .two2 {
+    top: 20px ;
+    right: 15px;
+    transform: translate(0 ,-10px) rotate(90deg);
+} .three3 {
+    top: 30px ;
+    transform: translate(-15px, -20px) rotate(90deg);
+} 
+
+.one1-x {
+    transform: translate(-10px , 0px) rotate(140deg)
+} .two2-x {
+    transform: translate(-10px) rotate(90deg) scale(0);
+    transition: transform 0s;
+} .three3-x {
+    transform: translate(-10px , -20px) rotate(220deg);
+} 
+
+.menu-x-ttw {
+    transition: 0.6s;
+}
+
+.eall-one:hover , .eall-two:hover {
+    background-color: rgb(255, 255, 255 , 100%);
+    color: rgb(0, 0, 0 , 50%) ;
+}
+
+
+.menu-xe {
+    position: absolute;
+    font-size: 35px;
+} .one11 {
+    top: 10px ;
+    right: 7px;
+    transform: translate(0) rotate(90deg);
+} .two22 {
+    top: 20px ;
+    right: 15px;
+    transform: translate(0 ,-10px) rotate(90deg);
+} .three33 {
+    top: 30px ;
+    transform: translate(-15px, -20px) rotate(90deg);
+} 
+
+.one1-xe {
+    transform: translate(-10px , 0px) rotate(140deg)
+} .two2-xe {
+    transform: translate(-10px) rotate(90deg) scale(0);
+    transition: transform 0s;
+} .three3-xe {
+    transform: translate(-10px , -20px) rotate(220deg);
+} 
+
+.menu-xe-ttw {
+    transition: 0.6s;
 }
