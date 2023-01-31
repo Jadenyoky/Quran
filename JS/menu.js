@@ -4,7 +4,7 @@ const menu_page = document.querySelector('.menu-page')
 
 function openPage() {
     menu_page.style.cssText="width: 300px"
-    content_page.style.cssText="margin-left: 300px"
+    content_page.style.cssText="margin-left: 0"
     all_page.style.cssText="height: 100vh"
 
     menu_page.classList.add('ttt')
