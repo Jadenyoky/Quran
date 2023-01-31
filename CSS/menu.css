@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+} 
+
+
+.all-page {
+    position: fixed;
+    height: 0;
+    width: 100%;
+    background-color: rgb( 0, 0, 0, 70%);
+}
+
+.content-page {
+    padding: 20px;
+}
+
+.icon-page {
+    width: 250px;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+.menu-page {
+    position: fixed;
+    height: 100vh;
+    width: 0;
+    top: 0;
+    left: 0;
+    background-color: blueviolet;
+    padding-top: 50px;
+    font-size: 25px;
+    overflow: hidden;
+    transition: 1s;
+} .menu-page > a {
+    padding: 20px;
+    height: 50px;
+    width: 0;
+    display: block;
+    text-decoration: none;
+    color: yellow ;
+} .menu-page > a:hover {
+    color: white
+}
+
+.close-page {
+    position: absolute;
+    top: 10px ;
+    right: 20px;
+    cursor: pointer;
+    padding: 10px;
+} .close-page:hover {
+    color: white
+}
+
+.ttt {
+    transition: 1s;
+}
