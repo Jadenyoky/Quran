@@ -1,0 +1,155 @@
+body {
+    height: 200000px;
+    scroll-behavior: smooth;
+} 
+
+.icon-page {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    height: 70px;
+    width: 70px;
+    background-color: aqua;
+    border-radius: 0;
+    border: 0 solid black;
+} .fa-angle-down , .fa-angle-up {
+    position: absolute;
+    top: 50% ;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+} 
+
+.icon-page0 {
+    position: fixed;
+    top: 50% ;
+    height: 100px;
+    width: 100px;
+    border: solid;
+    rotate: 0deg;
+    transform: scale(0);
+}
+
+.progresss {
+    height: 10px;
+    width: 0;
+    background-color: black;
+    position: fixed;
+    top: 0;
+} .prog {
+    background-color: aqua;
+    height: 10px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    text-align: center;
+} 
+
+
+.perc0 {
+    position: fixed;
+    top: 0 ;
+    left: 50%;
+    transform: translate(-50% , 0);
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    color: black ;
+    border-radius: 50%;
+} .perc {
+    position: absolute;
+    top: 50% ;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.prog-two {
+    position: fixed ;
+    bottom: 20px;
+    right: 20px;
+    transform: translate(-50%, -50%);
+    height: 70px;
+    width: 70px ;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: scale(0);
+    transition: 0.4s;
+} .prog-two-content {
+    position: absolute;
+    top: 50% ;
+    left: 50%;
+    height: 50%;
+    transform: translate(-50% , -50%);
+    height: calc(100% - 10px);
+    width: calc(100% - 10px) ;
+    border-radius: 50%;
+    background-color: white;
+    color: #0069a7;
+} .prog-two-content:hover {
+    background-color: #c0cfd8;
+} .klkl {
+    transform: scale(1);
+}
+
+.enddd {
+    position: relative;
+    top: 100% ;
+}
+
+
+.prog-three {
+    position: fixed ;
+    bottom: 20px;
+    right: 20px;
+    transform: translate(-50%, -50%);
+    height: 70px;
+    width: 70px ;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: scale(0);
+    transition: 0.4s;
+} .prog-three-content {
+    position: absolute;
+    top: 50% ;
+    left: 50%;
+    height: 50%;
+    transform: translate(-50% , -50%);
+    height: calc(100% - 10px);
+    width: calc(100% - 10px) ;
+    border-radius: 50%;
+    background-color: white;
+    color: #0069a7;
+} .prog-three-content:hover {
+    background-color: #c0cfd8;
+} .klkl2 {
+    transform: scale(1);
+}
+
+.cont {
+    position: fixed;
+    top: 20px ;
+    height: 100vh;
+    width: 200px;
+    background-color: aqua;
+    overflow: hidden;
+    transform: translateX(-110%);
+} .cont > div {
+
+}
+
+.cont-plus {
+    width: 50% ;
+}
+
+.ttt {
+    transition: 0.1s;
+}
+
+.hidd {
+    position: fixed;
+    height: 100vh;
+    background-color: transparent;
+    width: 10px;
+    overflow: hidden;
+}
