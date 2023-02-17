@@ -11,6 +11,7 @@ const menu2 = document.querySelector('.menu2')
 
 const mini_menu = document.querySelector('.mini-menu')
 
+all_menu.classList.add('trr0')
 
 mini_menu.addEventListener('click', function(){
     
