@@ -11,14 +11,27 @@
     <link rel="stylesheet" href="CSS/hover.css">
     <link rel="stylesheet" href="CSS/index-0.css">
     
-    <style> 
+    <style>
+        .lali {
+            display: grid ;
+            grid-template-columns: auto auto auto ;
+            justify-content: center ;
+            background-color: coral ; 
+            text-align: center ; 
+            font-size: 21px ; 
+            font-weight: bold ; 
+        }
         .lali > a {
+            color: white ; 
+            margin: 20px ; 
+            padding: 20px ; 
+            border: 4px solid white ;
+            width: 200px ;
             transition: 0.4s ;
         }
         .lali > a:hover {
             background-color: white ;
             color: coral ;
-            text-transform: uppercase;
         }
     </style>
 </head>
@@ -73,13 +86,13 @@
 
     <div style="background-color: black; height: 200px; width: 100% ; "></div>
     
-    <div class="lali" style="background-color: coral ; text-align: center ; font-size: 21px ; font-weight: bold ; display: flex ; flex-direction: column ; ">
+    <div class="lali">
         
-        <a href="menu.html" style="color: white ; margin: 20px ; padding: 20px ; border: 4px solid white ;">Menu ..</a>
+        <a href="menu.html">Menu ..</a>
         
-        <a href="Project.html" style="color: white ; margin: 20px ; padding: 20px ; border: 4px solid white ;">Project ..</a>
+        <a href="Project.html">Project ..</a>
      
-        <a href="drawer.html" style="color: white ; margin: 20px ; padding: 20px ; border: 4px solid white ;">Drawer ..</a>
+        <a href="drawer.html">Drawer ..</a>
         
     </div>
     
