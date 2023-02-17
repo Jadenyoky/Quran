@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 10000px;
+}
+
+
+
+.all-menu {
+    position: relative;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: black;
+    height: 200px;
+    width: 100%;
+    z-index: 2;
+}
+
+.mini-menu {
+    position: absolute;
+    top: 50% ;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: white ;
+    cursor: pointer;
+} .all-menu:hover {
+    background-color: blue;
+}
+
+.line {
+    position: absolute;
+    font-size: 30px;
+}
+
+.one {
+    top: -20px ;
+    right: 0 ;
+    transition: 0.1s ;
+}
+
+.two {
+    top: -20px ;
+    right : -10px ;
+    transition: 0.1s ;
+}
+
+.three {
+    top: -10px ;
+    right: 0 ;
+    transition: 0.1s ;
+}
+
+.four {
+    top: -10px ;
+    right: -10px ;
+    transition: 0.1s ;
+}
+
+.five {
+    top: 0 ;
+    right: 0 ;
+    transition: 0.1s ;
+}
+
+.six {
+    top: 0;
+    right: -10px ;
+    transition: 0.1s ;
+}
+
+
+.menu2 {
+    position: fixed;
+    top: 0 ;
+    background-color: blue;
+    height: 70px;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+.plus1 {
+    transform: translateX(-20px) ; 
+    opacity: 0 ;
+}
+
+.plus2 {
+    transform: translateX(20px) ; 
+    opacity: 0 ;
+}
+
+.plus3 {
+    transform: rotate(40deg) ; 
+    top: -15px
+}
+
+.plus4 {
+    transform: rotate(-40deg) ; 
+    top: -15px
+}
+
+.plus5 {
+    transform: rotate(-40deg) ; 
+    top: -7px
+}
+
+.plus6 {
+    transform: rotate(40deg) ; 
+    top: -7px
+}
+
+.fade0 {
+    transform: translateY(-100%) ;
+}
+
+.trr {
+    transition: 1s;
+}
+
+.lll {
+    position: fixed ; 
+    top: 200px;
+    height: 100vh;
+    width: 100%;
+    transform: translateY(-100%);
+    text-align: center ; 
+    color: white;
+    background-color: black;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.lll0 {
+    padding: 60px; 
+    transform: translate(0);
+}
+
+.trr0 {
+    transition: 0.3s;
+}
+
+.kk88 {
+    position: fixed; 
+    top: 30% ;
+    height: 100vh; 
+}
