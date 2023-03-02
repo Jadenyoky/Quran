@@ -1,36 +1,45 @@
-document.onreadystatechange = function() {
-    if (document.readyState === "complete") {
-        document.querySelector("body").style.visibility = "hidden";
-        document.querySelector(".progress1").style.visibility = "visible";
-        document.querySelector(".spinner").style.visibility = "visible";
-    } else {
-        setTimeout(() => {
-            document.querySelector(".progress1").style.display = "none";
-            document.querySelector(".spinner").style.display = "none";
-            document.querySelector("body").style.visibility = "visible";
-        }, 900);
-    }
-} 
+const icon_menu = document.querySelector('.icon-menu')
+const nav_page_small = document.querySelector('.nav-page-small')
+const highlight = document.querySelector('.highlight')
 
+icon_menu.addEventListener('click', function(){
+    nav_page_small.classList.toggle('nav-page-small-plus')
+    nav_page_small.classList.add('trr')
+    highlight.classList.toggle('ddd')
+})
 
-const bun = document.getElementsByClassName('nav-hover')
+highlight.addEventListener('click', function(){
+    nav_page_small.classList.remove('nav-page-small-plus')
+    highlight.classList.remove('ddd')
+})
 
-for( let u = 0 ; u < bun.length ; u++){
-    bun[u].addEventListener('click', function(){
-        let act = document.getElementsByClassName('activing')
-        act[0].className = act[0].className.replace(' activing','')
-        this.className += ' activing'
-    })
-} 
+const clickActiveNav = document.getElementsByClassName('clickActiveNav')
 
-
-const bu = document.querySelector('bu')
-const bun1 = document.getElementsByClassName('bun')
-
-for(let y = 0 ; y < bun1.length ; y++){
-    bun1[y].addEventListener('click', function(){
-        let act = document.getElementsByClassName("cliks") ;
-        act[0].className = act[0].className.replace(" cliks", "") ;
-        this.className += " cliks";
+for(let x = 0 ; x < clickActiveNav.length ; x++){
+    clickActiveNav[x].addEventListener('click', function(){
+        let acting = document.getElementsByClassName('nav-list-active')
+        acting[0].className = acting[0].className.replace(' nav-list-active')
+        this.className += ' nav-list-active'
     })
 }
+
+const clickActiveNavSmall = document.getElementsByClassName('clickActiveNavSmall')
+
+for(let n = 0 ; n < clickActiveNavSmall.length ; n++){
+    clickActiveNavSmall[n].addEventListener('click', function(){
+        let actingSmall = document.getElementsByClassName('nav-list-small-active')
+        actingSmall[0].className = actingSmall[0].className.replace(' nav-list-small-active')
+        this.className += ' nav-list-small-active'
+    })
+}
+
+const clickActive = document.getElementsByClassName('clickActive')
+
+for(let y = 0 ; y < clickActive.length ; y++){
+    clickActive[y].addEventListener('click', function(){
+        let act = document.getElementsByClassName('sectionThree-contentTwo-active')
+        act[0].className = act[0].className.replace(' sectionThree-contentTwo-active' , '')
+        this.className += ' sectionThree-contentTwo-active'
+    })
+}
+
