@@ -818,7 +818,7 @@ body {
         right: 30px;
     } .subDiv > p {
         font-size: 15px;
-    } .subDiv > input {
+    } .subDiv > input[type=email] {
         width: 220px;
     }
 }
