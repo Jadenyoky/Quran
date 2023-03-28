@@ -18,6 +18,7 @@ $('.btn-open').on('click', function(){
                 image.style.display = 'block'
                 highlight.style.display = 'block'
                 body.style.overflow = 'hidden'
+                document.title = 'Loading ...'
             } , 
             complete: function(){
                 image.style.display = 'none'
