@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.image {
+    position: absolute;
+    top: 50% ;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: none;
+    z-index: 5;
+} img {
+    width: 100%;
+}
+
+.highlight {
+    position: absolute;
+    top: 30px ;
+    height: calc(100vh - 30px);
+    width: 100%;
+    background-color: white;
+    display: none;
+}
+
+.line {
+    position: absolute;
+    top: 0 ;
+    width: 0 ;
+    height: 5px;
+    background-color: transparent;
+} 
+
+.navBaring {
+    background-color: rgb(0, 0, 0, 0.7);
+    padding: 20px;
+    display: grid;
+    place-content: center;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+.btn-open , .btn-home {
+    padding: 5px 10px;
+    border: 10px solid transparent;
+    border-radius: 5px 10px;
+    border-bottom: 10px solid white;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: white ;
+    transition: 0.7s;
+} .btn-open:hover , .activeOne {
+    background-color: white;
+    color: coral ;
+    border-bottom: 10px solid coral ;
+}
+
+.btn-home:hover , .activeTwo {
+    background-color: white;
+    color: green ;
+    border-bottom: 10px solid green ;
+}
+
+.lineOne {
+    height: 5px ;
+    width: 100%;
+    background-color: transparent;
+    transition: 0.7s;
+}
